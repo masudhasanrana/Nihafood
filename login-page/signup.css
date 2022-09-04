@@ -1,0 +1,17 @@
+.all-box,.all-box-password{
+    height: 43px;
+    width: 322px;
+    margin: 10px auto;
+    border-radius: 6px;
+    padding: 3px 7px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 16px;
+}
+.all-box-password{
+margin-bottom: 40px;
+}
+.all-box::placeholder,.all-box-password::placeholder{
+    color: white;
+}

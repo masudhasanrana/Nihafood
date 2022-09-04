@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: roboto,arial;
+    margin: 0;
+    background: radial-gradient(rgb(255, 255, 255),rgb(252, 193, 172));
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+
+}
+#nav::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 65px;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+}
+
+#nav img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px 25px;
+    align-items: center;
+    
+}
+#nav ul{
+    display: flex;
+    flex-direction:row;
+    margin: 5px 15px;
+}
+#nav li{
+    list-style: none;
+    border-radius: 18px; 
+    transition: .15s; 
+}
+#nav a{
+    display: block;
+    margin: 10px 20px;
+    text-decoration: none;
+    color: rgb(230, 222, 222);
+    font-weight: 700;
+    font-size: 1.05em;
+    transition: .15s;
+}
+#nav li:hover,#nav a:hover{
+    background-color: orange;
+    color: black;
+}
+
+.fa-bag-shopping{
+    height: 25px;
+    position: absolute;
+    color: white;
+    right: 30px;
+}
+.fa-bag-shopping:hover{
+    color: orange;
+}
+
+
+/*------------Home----------*/
+.home-container{
+    position:relative;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    padding: 45px 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#home{
+    background-image: url(../Food/img/1back-img.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    height: 500px;
+    z-index: -1;
+    opacity: .9;
+}
+#home h1{
+    font-weight: 3.4em;
+    color: white;
+    min-width: 250px;
+    display: block;
+    margin: 190px auto;
+    margin-bottom: 14px;
+}
+#home p{
+    color: white;
+    min-width: 400px;
+    max-width: 600px;
+}
+#home button{
+    padding: 5px 10px;
+    margin: 70px 5px;
+    background-color:transparent;
+    border: 1px solid white;
+    font-size:1.1em ;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: .15s;
+}
+
+#home button:hover{
+    background-color:rgb(238, 95, 34);
+}
+#home button:active{
+    background-color: rgb(201, 67, 10);
+}
+
+/*-----Services------*/
+
+.services{
+    display: flex;
+    flex-direction: column;
+    margin-top: 830px;
+    height: 700px;
+  
+}
+.food-container,.catering-container,.food-deivery-container{
+    transition: transform .5s;
+}
+.food-container:hover,.food-deivery-container:hover,.catering-container:hover{
+    transform: translateY(-10px);
+}
+.services h1{
+    text-align: center;
+    font-size: 30px;
+    color: orangered ;
+}
+.services .col-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
+    
+}
+.services img{
+    width: 280px;
+    height: 280px;
+    display: block;
+    margin: 30px auto;
+
+}
+
+.col-3 h3{
+    text-align: center;
+    font-size: 1.4em;
+    color: orangered;
+}
+
+/*------menu---------*/
+
+.menu h1{
+    text-align: center;
+    font-size: 30px;
+    color: orangered ;
+}
+
+.col-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 70px 70px;
+    row-gap: 50px;
+    column-gap: 18px;
+    align-items: center;
+    text-align: center;
+}
+.menu img{
+    width: 270px;
+    height: 250px;
+    transition: transform .8s ease;
+}
+
+.col-4 button{
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    padding: 6px 12px;
+    background: orangered;
+    margin-top: 9px;
+    transition: .5s;
+}
+button:hover{
+    background: rgb(229, 64, 3);
+}
+button:active{
+    background: rgb(148, 41, 2);
+    transform: translateY(1px);
+}
+.col-4 p{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.food-img{
+    width: 270px;
+    height: 250px;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+.food-img:hover img{
+    transform: scale(1.2);
+}
+
+/*--------partner logo--------*/
+
+.partner-logo{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    justify-content: center;
+    margin-top: 190px;
+}
+.partner-logo img{
+    width: 100px;
+    display: block;
+    margin: auto 0;
+    filter: grayscale(100%);
+}
+.partner-logo img:hover{
+    filter: grayscale(0%);
+}
+.hungrynaki img{
+    margin-top: 30px;
+}
+.pathao img{
+    margin-top: 16px;
+}
+.daraz img{
+    margin-top: 10px;
+}
+
+
+/*-----Footer-------*/
+
+
+.upper-footer{
+    margin-top:90px;
+    background-color: orangered;
+    height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+.contact-container{
+    margin:20px auto;
+    min-width: 280px;
+    line-height: 35px;
+    color: white;
+}
+.contact-container h3{
+    text-align: left;
+    margin-bottom: 60px;
+    font-size: 22px;
+}
+.about-container{
+    margin-left: 40px;
+}
+.about-container img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+
+}
+.about-container h3{
+    color: white;
+    font-size: 22px;
+    text-align: left;
+    margin:20px 0 10px 0 ;
+    
+    
+}
+.about-container p{
+    margin-top: 10px;
+    min-width: 280px;
+    text-align: left;
+    color: white;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.follow-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.follow-container img{
+    width: 30px;
+}
+.follow-container h3{
+    color: white;
+    font-size: 22px;
+    text-align: left;
+    margin-top: 20px;
+}
+.facebook,.instagram,.twitter,.whatsapp{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    margin-top: 10px;
+}
+.follow-container span{
+    color: white;
+    display: block;
+    margin: auto 0;
+}
+.facebook{
+    margin-top: 60px;
+}
+
+.comment{
+    margin-right: 20px;
+}
+.comment h3{
+    color: white;
+    font-size: 22px;
+    text-align: left;
+    margin-top: 20px;
+}
+.comment p{
+    margin-top: 20px;
+    color: white;
+    font-weight: 500;
+}
+.email-box{
+    margin-top: 5px;
+    padding: 5px;
+    font-family: roboto,arial;
+    display: block;
+}
+.comment-box{
+    margin-top: 7px;
+    padding: 5px;
+    font-family: roboto,arial;
+    display: block;
+}
+.submit-btn{
+    margin-top: 10px;
+    width: 70px;
+    height: 28px;
+}
+.lower-footer{
+    background-color: orangered;
+    padding-bottom: 30px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}

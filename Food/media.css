@@ -1,0 +1,20 @@
+@media (max-width:840px) {
+    .services .col-3{
+       grid-template-columns: 1fr 1fr;
+
+    }
+    .services img{
+        min-width: 80px;
+
+    }
+}
+@media (max-width:630px) {
+    .services .col-3{
+       grid-template-columns: 1fr;
+
+    }
+    .services img{
+        min-width: 80px;
+
+    }
+}
